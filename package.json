@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintez/portfolio-site.git"
+  },
+  "author": "Gintez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintez/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/Gintez/portfolio-site#readme",
+  "dependencies": {
+    "css-loader": "^0.26.1",
+    "easy-pie-chart": "^2.1.7",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "imports-loader": "^0.7.0"
+  }
+}
