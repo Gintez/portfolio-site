@@ -3,9 +3,13 @@
   max-width: 95%;
 }
 
-.text-wrapper {
+.section-wrapper {
   margin-top: 20px;
   padding: 10px;
+  a {
+    color: $grey-dark;
+    text-decoration: underline;
+  }
 }
 
 .header-section {
@@ -119,6 +123,7 @@
 
 #skills {
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 .icon-skills, .header-section-skills {
@@ -161,5 +166,67 @@
 }
 
 // CODE
+#code {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.icon-code, .header-section-code {
+  color: $yallow;
+}
+
+.line-code {
+  border-bottom: 1px solid $yallow;
+}
+
+.project-block {
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 1px solid $grey-light;
+  border-radius: 6px;
+  text-align: center;
+  img {
+    position: relative;
+    top: 10px;
+  }
+  i {
+    padding-left: 10px;
+  }
+}
+
+.project-title {
+  padding: 25px 0 10px 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.technology-wrapper {
+  padding: 0 5px;
+}
+.technology-wrapper:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.technology-item {
+  float: left;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 2px;
+  border: 2px solid $yallow;
+}
 
 // CONTACT
+
+.icon-contact, .header-section-contact {
+  color: $red;
+}
+
+.line-contact {
+  border-bottom: 1px solid $red;
+}

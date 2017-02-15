@@ -56,9 +56,8 @@
 	};
 
 	window.addEventListener('DOMContentLoaded', function() {
-	  var charts = [];
 	  [].forEach.call(document.querySelectorAll('.chart'),  function(el) {
-	    charts.push(new EasyPieChart(el, options));
+	    new EasyPieChart(el, options);
 	  });
 	});
 

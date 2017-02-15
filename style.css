@@ -71,17 +71,16 @@ body {
 mark {
   color: #464F4C; }
 
-a {
-  color: #464F4C;
-  text-decoration: underline; }
-
 .line {
   border-bottom: 1px solid #ADAEAE;
   max-width: 95%; }
 
-.text-wrapper {
+.section-wrapper {
   margin-top: 20px;
   padding: 10px; }
+  .section-wrapper a {
+    color: #464F4C;
+    text-decoration: underline; }
 
 .header-section {
   position: relative;
@@ -167,7 +166,8 @@ a {
     padding-top: 5px; }
 
 #skills {
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 50px; }
 
 .icon-skills, .header-section-skills {
   color: #348177; }
@@ -200,6 +200,58 @@ a {
 .chart-wrapper {
   margin-top: 50px; }
 
+#code {
+  padding: 10px;
+  margin-bottom: 50px; }
+
+.icon-code, .header-section-code {
+  color: #F0B937; }
+
+.line-code {
+  border-bottom: 1px solid #F0B937; }
+
+.project-block {
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 1px solid #D3CBBD;
+  border-radius: 6px;
+  text-align: center; }
+  .project-block img {
+    position: relative;
+    top: 10px; }
+  .project-block i {
+    padding-left: 10px; }
+
+.project-title {
+  padding: 25px 0 10px 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center; }
+
+.technology-wrapper {
+  padding: 0 5px; }
+
+.technology-wrapper:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.technology-item {
+  float: left;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 2px;
+  border: 2px solid #F0B937; }
+
+.icon-contact, .header-section-contact {
+  color: #D53C25; }
+
+.line-contact {
+  border-bottom: 1px solid #D53C25; }
+
 .logo {
   text-align: center;
   padding-top: 40px;
@@ -208,7 +260,7 @@ a {
 .menu-small {
   margin: 30px 0px; }
 
-.menu-small div {
+.menu-small-item {
   margin: 5px;
   background: #F0B937;
   padding: 15px;
