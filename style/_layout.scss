@@ -8,10 +8,10 @@
   }
 }
 
-.row:before, .row:after {
-  content:"";
-  display: 740px;
+.row:before, .row:after, .col:after, .col:before {
   clear: both;
+  content: "";
+  display: table;
 }
 
 .row {
@@ -23,8 +23,6 @@
   position: relative;
   float: left;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .col-xs-12 {
@@ -103,7 +101,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .col-lg-12 {
     width: 100%;
   }

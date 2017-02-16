@@ -1,14 +1,9 @@
-.line {
-  border-bottom: 1px solid $grey;
-  max-width: 95%;
-}
 
 .section-wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px;
-  a {
-    color: $grey-dark;
-    text-decoration: underline;
+  @media (min-width: 740px) {
+    margin-top: 60px;
   }
 }
 
@@ -17,6 +12,7 @@
   padding: 10px;
   top: 8px;
   background: $dirty-white;
+  font-size: 16px;
 }
 
 .icon {
@@ -27,42 +23,66 @@
   background-color: $dirty-white;
 }
 
+section {
+  padding-top: 10px;
+  @media (min-width: 740px) {
+    padding-top: 30px;
+  }
+}
+
 // INTRO
 
 #intro {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px 0 50px 0;
   text-align: center;
+  @media (min-width: 740px) {
+    line-height: 35px;
+  }
 }
 
-.hello {
+.intro-hello {
   font-size: 70px;
   font-family: 'Cookie', cursive;
+  @media (min-width: 740px) {
+    font-size: 85px;
+  }
 }
 
-.me {
-  font-size: 22px;
+.intro-me {
   padding-top: 20px;
+  font-size: 22px;
+  @media (min-width: 740px) {
+    padding-top: 40px;
+  }
 }
 
-.headline {
-  color: $red;
-  font-size: 25px;
+.intro-headline {
   padding: 10px;
-  font-weight: 600;
+  font-size: 25px;
+  color: $red;
+  @media (min-width: 740px) {
+    font-size: 36px;
+  }
 }
 
-.sub-headline {
-  font-size: 18px;
+.intro-sub-headline {
   margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+  @media (min-width: 740px) {
+    font-size: 18px;
+  }
+}
+
+.intro-profile-img {
+  border-radius: 50%;
+  margin: 20px;
 }
 
 // ABOUT
 
 #about {
-  padding: 10px;
   padding-bottom: 100px;
 }
 
@@ -80,12 +100,13 @@
 }
 
 .block-about {
+  display: block;
   width: 90%;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid $grey-light;
   border-radius: 6px;
+  margin: auto;
   margin-top: 5px;
-
 }
 
 .block-about-icon {
@@ -93,12 +114,12 @@
   color: $grey-light;
 }
 
-.block-about-label {
-  font-weight: bold;
-}
-
 .block-about-input {
   display: none;
+}
+
+.block-about-label {
+  text-transform: uppercase;
 }
 
 .block-about-text {
@@ -106,12 +127,12 @@
   overflow: hidden;
   line-height: 18px;
   transition: all .14s ease;
-   mark {
-    background-color: #E4F4FF;
+  mark {
+    background-color: $blue-bright-ligher;
   }
 }
 
-.block-about-input:checked ~ .block-about-text{
+.block-about-input:checked ~ .block-about-text {
   max-height: 500px;
   padding-top: 15px;
   p {
@@ -122,7 +143,6 @@
 // SKILLS
 
 #skills {
-  padding: 10px;
   margin-bottom: 50px;
 }
 
@@ -137,6 +157,13 @@
 .skills-wrapper {
   margin: auto;
   text-align: center;
+}
+
+.chart-wrapper {
+  margin-top: 50px;
+  @media (min-width: 740px) {
+    margin-top: 70px;
+  }
 }
 
 .chart {
@@ -155,19 +182,16 @@
     left: 0;
     top: 0;
   }
+
+
 }
 
 .chart-smaller {
   font-size: 13px;
 }
 
-.chart-wrapper {
-  margin-top: 50px;
-}
-
 // CODE
 #code {
-  padding: 10px;
   margin-bottom: 50px;
 }
 
@@ -180,33 +204,28 @@
 }
 
 .project-block {
-  width: 250px;
+  width: 300px;
   margin: auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding-bottom: 15px;
   text-align: center;
   border: 1px solid $grey-light;
   border-radius: 6px;
-  text-align: center;
   img {
     position: relative;
     top: 10px;
-  }
-  i {
-    padding-left: 10px;
   }
 }
 
 .project-title {
   padding: 25px 0 10px 10px;
   font-size: 18px;
-  display: flex;
-  align-items: center;
 }
 
 .technology-wrapper {
   padding: 0 5px;
 }
+
 .technology-wrapper:after {
   clear: both;
   content: "";
@@ -216,17 +235,47 @@
 .technology-item {
   float: left;
   padding: 5px;
-  border-radius: 6px;
   margin: 2px;
   border: 2px solid $yallow;
+  border-radius: 6px;
 }
 
 // CONTACT
+#contact {
+  margin-bottom: 50px;
+  color: $grey;
+}
 
-.icon-contact, .header-section-contact {
+.icon-contact, .header-section-contact, .icon-social {
   color: $red;
 }
 
 .line-contact {
   border-bottom: 1px solid $red;
 }
+
+.contact-social-wrapper {
+  padding-top: 30px;
+}
+
+.icon-social {
+  padding: 5px;
+}
+
+.contact-detail-wrapper {
+  margin-left: 5px;
+}
+
+.contact-detail-item {
+  line-height: 25px;
+}
+
+.contact-detail-intro {
+  padding-bottom: 5px;
+  color: $red;
+}
+
+.icon-contact-detail {
+  padding-right: 10px;
+}
+

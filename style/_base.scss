@@ -2,11 +2,19 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: $grey-dark;
   background-color: $dirty-white;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 mark {
   color: $grey-dark;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
 
+.link-text {
+  color: $grey-dark;
+  text-decoration: underline;
+}

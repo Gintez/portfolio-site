@@ -4,40 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
   <title>Gintaute Ezerskyte | A Front-end Developer's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./dist/style.css">
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet'>
 </head>
 <body>
   <header>
+    <div class="overlay hide-for-small"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="logo">
-            <img src="./images/logo.png" height="90px" width="112px">
-          </div>
-          <nav class="menu menu-small show-for-small">
-            <div class="menu-small-item">
+      <div class="row hide-for-small">
+
+        <div class="col col-md-5">
+          <nav class="menu-big menu-big-left vertical-center">
+            <div class="menu-big-item" >
               <a href="#about">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                ABOUT
+              ABOUT
               </a>
             </div>
-            <div class="menu-small-item">
+            <div class="menu-big-item" >
               <a href="#skills">
                 <i class="fa fa-wrench" aria-hidden="true"></i>
                 SKILLS
               </a>
             </div>
-            <div class="menu-small-item">
+          </nav>
+        </div>
+
+        <div class="col col-md-2">
+          <div class="logo">
+            <img src="./images/logo.png" height="56px" width="70px">
+          </div>
+        </div>
+
+        <div class="col col-md-5">
+          <nav class="menu-big menu-big-left vertical-center">
+            <div class="menu-big-item">
               <a href="#code">
                 <i class="fa fa-code" aria-hidden="true"></i>
                 CODE
               </a>
             </div>
-            <div class="menu-small-item">
+            <div class="menu-big-item">
               <a href="#contact">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 CONTACT
@@ -45,108 +54,131 @@
             </div>
           </nav>
         </div>
+
+
       </div>
+      <div class="logo show-for-small">
+        <img src="./images/logo-mobile.png" height="90px" width="112px">
+      </div>
+      <nav class="menu menu-small show-for-small">
+        <div class="menu-small-item">
+          <a href="#about">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            ABOUT
+          </a>
+        </div>
+        <div class="menu-small-item">
+          <a href="#skills">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            SKILLS
+          </a>
+        </div>
+        <div class="menu-small-item">
+          <a href="#code">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            CODE
+          </a>
+        </div>
+        <div class="menu-small-item">
+          <a href="#contact">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            CONTACT
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
   <main>
     <div class="container">
       <section id="intro">
         <div class="row">
-          <div class="col-xs-12">
-            <span class="hello">Hello,</span>
-            <div class="me">I'M GINTAUTE EZERSKYTE.</div>
-            <h1 class="headline">A FRONT END DEVELOPER</h1>
-            <h2 class="sub-headline"> I'm actively looking for a Junior Front End developer role.</h2>
+          <div class="col col-xs-12">
+            <span class="intro-hello">Hello,</span>
+            <div class="intro-me">I'M GINTAUTE EZERSKYTE.</div>
+            <h1 class="intro-headline">A FRONT END DEVELOPER</h1>
+            <h2 class="intro-sub-headline"> I'm actively looking for a Junior Front End developer role.</h2>
+            <div ><img class="intro-profile-img" src="./images/profile.jpg" width="151px" height="150px"></div>
           </div>
         </div>
       </section>
       <section id="about">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="line line-about">
-              <span class="icon icon-about">
-                <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
-              </span>
-              <h1>
-                <span class="header-section header-section-about">ABOUT ME</span>
-              </h1>
-            </div>
-            <div class="section-wrapper">
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle1">
-                <label class="block-about-label" for="toggle1">
-                  self-taught
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
+        <div class="line line-about">
+          <span class="icon icon-about">
+            <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
+          </span>
+          <h1>
+            <span class="header-section header-section-about">ABOUT ME</span>
+          </h1>
+        </div>
+        <div class="section-wrapper">
+          <div class="row">
+            <div class="col col-xs-12 col-md-6">
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> self-taught </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
                 <div class="block-about-text">
                   <p>Attained Front End Development certificate by finishing <mark>FreeCodeCamp online course</mark>. Where I was learning HTML, CSS, Javascript by solving algorithms and creating project sites. <a href="https://www.freecodecamp.com/gintez">View projects</a> </p>
                   <p>Continued learning by finishing <mark>two month internship</mark> in www.showaround.com. Working with big project code base. Learning to work with GIT, Webpack, Sass, AngularJS.</p>
                   <p>While continuously working on <mark><a href="https://github.com/Gintez">my personal projects</a></mark> to develop better skills. <mark>Watching courses</mark> about ES6, AngularJS, AngularJS2, Typescript, advanced Javascript and SQL.</p>
                   <p><b>In total about <mark>more then 600 hours of deliberate practice.</mark></b></p>
                 </div>
-              </div>
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle2">
-                <label class="block-about-label" for="toggle2">
-                  business sense
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
+              </label>
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> business sense </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
                 <div class="block-about-text">
                   <p>I have an <mark>international business and communication degree</mark>. I really enjoyed my studies. Up to now I a hold strong inerest and understanding of the business world.</p>
                   <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
                 </div>
-              </div>
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle3">
-                <label class="block-about-label" for="toggle3">
-                  enjoy work
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
-                <div class="block-about-text">
-                  <p>I have an <mark>international business and communication degree</mark>. Up to now I hold a strong inerest and understanding of the business world.</p>
-                  <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
-                </div>
-              </div>
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle4">
-                <label class="block-about-label" for="toggle4">
-                  work ethics
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
+              </label>
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> business sense </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
                 <div class="block-about-text">
                   <p>I have an <mark>international business and communication degree</mark>. I really enjoyed my studies. Up to now I a hold strong inerest and understanding of the business world.</p>
                   <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
                 </div>
-              </div>
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle5">
-                <label class="block-about-label" for="toggle5">
-                  work ethics
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
+              </label>
+            </div>
+            <div class="col col-xs-12 col-md-6">
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> business sense </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
                 <div class="block-about-text">
                   <p>I have an <mark>international business and communication degree</mark>. I really enjoyed my studies. Up to now I a hold strong inerest and understanding of the business world.</p>
                   <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
                 </div>
-              </div>
-              <div class="block-about">
-                <input class="block-about-input" type="checkbox" id="toggle6">
-                <label class="block-about-label" for="toggle6">
-                  work ethics
-                  <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
-                </label>
+              </label>
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> business sense </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
                 <div class="block-about-text">
                   <p>I have an <mark>international business and communication degree</mark>. I really enjoyed my studies. Up to now I a hold strong inerest and understanding of the business world.</p>
                   <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
                 </div>
-              </div>
+              </label>
+              <label class="block-about">
+                <input class="block-about-input" type="checkbox"></input>
+                <span class="block-about-label"> business sense </span>
+                <i class="fa fa-angle-double-down block-about-icon" aria-hidden="true"></i>
+                <div class="block-about-text">
+                  <p>I have an <mark>international business and communication degree</mark>. I really enjoyed my studies. Up to now I a hold strong inerest and understanding of the business world.</p>
+                  <p>I was <mark>working in management and marketing roles</mark> for 3 years. While working with web projects and seeing developer's job from managers perspective.</p>
+                </div>
+              </label>
             </div>
           </div>
         </div>
+
       </section>
       <section id="skills">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col col-xs-12">
             <div class="line line-skills">
               <span class="icon icon-skills">
                 <i class="fa fa-wrench fa-lg" aria-hidden="true"></i>
@@ -185,9 +217,9 @@
         </div>
         <div class="section-wrapper">
           <div class="row">
-            <div class="col-xs-12 ">
+            <div class="col col-xs-12 col-md-6 col-lg-4">
               <div class="project-block">
-                <img src="./images/placeholder.png" height="200px" width="230px">
+                <img src="./images/placeholder.png" height="200px" width="280px">
                 <div class="project-title">
                   To Do List
                   <a href="#">
@@ -202,8 +234,10 @@
                   <div class="technology-item">SCSS</div>
                 </div>
               </div>
+            </div>
+            <div class="col col-xs-12 col-md-6 col-lg-4">
               <div class="project-block">
-                <img src="./images/placeholder.png" height="200px" width="230px">
+                <img src="./images/placeholder.png" height="200px" width="280px">
                 <div class="project-title">
                   Sample Shop Site
                   <a href="#">
@@ -217,8 +251,10 @@
                   <div class="technology-item">JS</div>
                 </div>
               </div>
+            </div>
+            <div class="col col-xs-12 col-md-6 col-lg-4">
               <div class="project-block">
-                <img src="./images/placeholder.png" height="200px" width="230px">
+                <img src="./images/placeholder.png" height="200px" width="280px">
                 <div class="project-title"> Threehouse Home Page
                   <a href="#">
                     <i class="fa fa-github fa-lg" aria-hidden="true"></i>
@@ -244,10 +280,38 @@
             <span class="header-section header-section-contact">CONTACT</span>
           </h1>
         </div>
+        <div class="section-wrapper">
+          <div class="contact-detail-wrapper">
+            <div class="contact-detail-item contact-detail-intro">Open to all the opportunities:</div>
+            <div class="contact-detail-item">Gintaute Ežerskytė</div>
+            <div class="vertical-center contact-detail-item">
+              <i class="fa fa-mobile fa-2x icon-contact-detail" aria-hidden="true"></i>
+              +370 60977 427
+            </div>
+            <div class="vertical-center contact-detail-item">
+              <i class="fa fa-envelope-o fa-lg icon-contact-detail" aria-hidden="true"></i>
+              gintaute.ez@gmail.com
+            </div>
+          </div>
+          <div class="contact-social-wrapper">
+            <a href="https://www.linkedin.com/in/gintaut%C4%97-e%C5%BEerskyt%C4%97-b4716543/">
+              <i class="fa fa-linkedin-square fa-2x icon-social" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Gintez">
+              <i class="fa fa-github fa-2x icon-social" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/ginte.ezerskyte">
+              <i class="fa fa-facebook-square fa-2x icon-social" aria-hidden="true"></i>
+            </a>
+            <a href="http://codepen.io/Ginte/">
+              <i class="fa fa-codepen fa-2x icon-social" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   </main>
   <script src="./node_modules/easy-pie-chart/dist/easypiechart.js"></script>
-  <script src="./bundle.js"></script>
+  <script src="./dist/bundle.js"></script>
 </body>
 </html>
