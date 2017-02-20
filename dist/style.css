@@ -169,6 +169,8 @@ section {
   border-radius: 6px;
   margin: auto;
   margin-top: 5px; }
+  .block-about:hover {
+    cursor: pointer; }
 
 .block-about-icon {
   float: right;
@@ -183,7 +185,7 @@ section {
 .block-about-text {
   max-height: 0;
   overflow: hidden;
-  line-height: 18px;
+  line-height: 20px;
   transition: all .14s ease; }
   .block-about-text mark {
     background-color: #E4F4FF; }
@@ -192,7 +194,10 @@ section {
   max-height: 500px;
   padding-top: 15px; }
   .block-about-input:checked ~ .block-about-text p {
-    padding-top: 5px; }
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .block-about-input:checked ~ .block-about-text p a {
+      text-decoration: underline; }
 
 #skills {
   margin-bottom: 50px; }
@@ -242,22 +247,28 @@ section {
 
 .project-block {
   width: 300px;
-  margin: auto;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
   text-align: center;
   border: 1px solid #D3CBBD;
-  border-radius: 6px; }
+  border-radius: 6px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px; }
   .project-block img {
     position: relative;
     top: 10px; }
+
+.project-block:hover {
+  border: 2px solid #F0B937; }
 
 .project-title {
   padding: 25px 0 10px 10px;
   font-size: 18px; }
 
+.project-title:hover {
+  color: black; }
+
 .technology-wrapper {
-  padding: 0 5px; }
+  padding: 10px 5px; }
 
 .technology-wrapper:after {
   clear: both;
@@ -270,6 +281,13 @@ section {
   margin: 2px;
   border: 2px solid #F0B937;
   border-radius: 6px; }
+
+.project-block-wrapper {
+  -webkit-column-width: 320px;
+  -moz-column-width: 320px;
+  column-width: 320px;
+  column-gap: 15px;
+  text-align: center; }
 
 #contact {
   margin-bottom: 50px;
@@ -317,6 +335,9 @@ section {
   text-align: center;
   color: #FBFBF0;
   font-size: 20px; }
+
+.menu-small-item:hover, .menu-big-item:hover {
+  opacity: 0.8; }
 
 .menu-big {
   margin: auto;

@@ -107,6 +107,9 @@ section {
   border-radius: 6px;
   margin: auto;
   margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .block-about-icon {
@@ -125,7 +128,7 @@ section {
 .block-about-text {
   max-height: 0;
   overflow: hidden;
-  line-height: 18px;
+  line-height: 20px;
   transition: all .14s ease;
   mark {
     background-color: $blue-bright-ligher;
@@ -137,6 +140,10 @@ section {
   padding-top: 15px;
   p {
     padding-top: 5px;
+    padding-bottom: 5px;
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -182,8 +189,6 @@ section {
     left: 0;
     top: 0;
   }
-
-
 }
 
 .chart-smaller {
@@ -205,25 +210,34 @@ section {
 
 .project-block {
   width: 300px;
-  margin: auto;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
   text-align: center;
   border: 1px solid $grey-light;
   border-radius: 6px;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
   img {
     position: relative;
     top: 10px;
   }
+
+}
+.project-block:hover {
+  border: 2px solid $yallow;
 }
 
 .project-title {
   padding: 25px 0 10px 10px;
   font-size: 18px;
+
+}
+
+.project-title:hover {
+  color: black;
 }
 
 .technology-wrapper {
-  padding: 0 5px;
+  padding: 10px 5px;
 }
 
 .technology-wrapper:after {
@@ -238,6 +252,14 @@ section {
   margin: 2px;
   border: 2px solid $yallow;
   border-radius: 6px;
+}
+
+.project-block-wrapper {
+  -webkit-column-width: 320px;
+  -moz-column-width: 320px;
+  column-width: 320px;
+  column-gap: 15px;
+  text-align: center;
 }
 
 // CONTACT
