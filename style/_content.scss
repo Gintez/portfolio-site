@@ -80,10 +80,24 @@ section {
   margin: 20px;
 }
 
+.download-btn {
+  padding: 10px;
+  border: 1px solid $red;
+  color: $red;
+  font-size: 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  opacity: 0.7;
+}
+
 // ABOUT
 
 #about {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 
 .sub-headline-about {
@@ -150,7 +164,7 @@ section {
 // SKILLS
 
 #skills {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .icon-skills, .header-section-skills {
@@ -201,11 +215,11 @@ section {
 }
 
 .icon-code, .header-section-code {
-  color: $yallow;
+  color: $yellow;
 }
 
 .line-code {
-  border-bottom: 1px solid $yallow;
+  border-bottom: 1px solid $yellow;
 }
 
 .project-block {
@@ -223,7 +237,7 @@ section {
 
 }
 .project-block:hover {
-  border: 2px solid $yallow;
+  border: 2px solid $yellow;
 }
 
 .project-title {
@@ -250,7 +264,7 @@ section {
   float: left;
   padding: 5px;
   margin: 2px;
-  border: 2px solid $yallow;
+  border: 2px solid $yellow;
   border-radius: 6px;
 }
 
@@ -270,6 +284,10 @@ section {
 
 .icon-contact, .header-section-contact, .icon-social {
   color: $red;
+}
+
+.icon-social:hover {
+  opacity: 0.9;
 }
 
 .line-contact {

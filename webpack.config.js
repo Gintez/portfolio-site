@@ -27,5 +27,9 @@ module.exports = {
           jQuery: "jquery",
           "window.jQuery": "jquery"
       })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './'
+    }
 };

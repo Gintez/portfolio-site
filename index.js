@@ -14,9 +14,6 @@ window.addEventListener('DOMContentLoaded', function() {
   [].forEach.call(document.querySelectorAll('.chart'),  function(el) {
     new EasyPieChart(el, options);
   });
-});
-
-$(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -28,6 +25,6 @@ $(document).ready(function(){
       });
     }
   });
-
 });
+
 

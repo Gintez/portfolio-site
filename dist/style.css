@@ -148,8 +148,20 @@ section {
   border-radius: 50%;
   margin: 20px; }
 
+.download-btn {
+  padding: 10px;
+  border: 1px solid #D53C25;
+  color: #D53C25;
+  font-size: 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.download-btn:hover {
+  opacity: 0.7; }
+
 #about {
-  padding-bottom: 100px; }
+  padding-bottom: 30px; }
 
 .sub-headline-about {
   text-align: center;
@@ -200,7 +212,7 @@ section {
       text-decoration: underline; }
 
 #skills {
-  margin-bottom: 50px; }
+  margin-bottom: 10px; }
 
 .icon-skills, .header-section-skills {
   color: #348177; }
@@ -295,6 +307,9 @@ section {
 
 .icon-contact, .header-section-contact, .icon-social {
   color: #D53C25; }
+
+.icon-social:hover {
+  opacity: 0.9; }
 
 .line-contact {
   border-bottom: 1px solid #D53C25; }
