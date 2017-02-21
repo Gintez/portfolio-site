@@ -1,5 +1,5 @@
-require ('./style/main.scss');
-require ('font-awesome/css/font-awesome.css');
+import './style/main.scss';
+import 'font-awesome/css/font-awesome.css';
 
 var options = {
   scaleColor: false,
@@ -26,5 +26,3 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-
