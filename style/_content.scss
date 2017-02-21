@@ -144,6 +144,9 @@ section {
   overflow: hidden;
   line-height: 20px;
   transition: all .14s ease;
+  &:hover {
+    cursor: auto;
+  }
   mark {
     background-color: $blue-bright-ligher;
   }

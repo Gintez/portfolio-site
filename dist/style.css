@@ -199,6 +199,8 @@ section {
   overflow: hidden;
   line-height: 20px;
   transition: all .14s ease; }
+  .block-about-text:hover {
+    cursor: auto; }
   .block-about-text mark {
     background-color: #E4F4FF; }
 
